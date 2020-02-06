@@ -1,0 +1,12 @@
+
+# TrafficStatisticDataResp
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**errcode** | **String** | 错误码信息。 | 
+**errmsg** | **String** | 结果信息。 | 
+**data** | [**List&lt;TrafficStatisticInfo&gt;**](TrafficStatisticInfo.md) | 查询到的TopN终端流量列表信息。 | 
+
+
+
