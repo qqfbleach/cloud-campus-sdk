@@ -60,7 +60,7 @@ public class BootROMNetcfgNorthboundApiTest {
      */
     @Test
     public void updateSiteBootRomConfigTest() throws ApiException {
-        UUID siteId = null;
+        String siteId = null;
         BootRomDto bootRomDto = null;
         BootRomResponse response = api.updateSiteBootRomConfig(siteId, bootRomDto);
 

@@ -44,7 +44,7 @@ public class LSWMgmtVlanNorthboundApiTest {
      */
     @Test
     public void configTest() throws ApiException {
-        UUID deviceId = null;
+        String deviceId = null;
         MgmtVlanDto body = null;
         MgmtVlanResponseDto response = api.config(deviceId, body);
 
@@ -61,7 +61,7 @@ public class LSWMgmtVlanNorthboundApiTest {
      */
     @Test
     public void getConfigTest() throws ApiException {
-        UUID deviceId = null;
+        String deviceId = null;
         MgmtVlanResponseDto response = api.getConfig(deviceId);
 
         // TODO: test validations

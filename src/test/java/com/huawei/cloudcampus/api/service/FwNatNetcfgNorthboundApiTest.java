@@ -48,7 +48,7 @@ public class FwNatNetcfgNorthboundApiTest {
      */
     @Test
     public void createDeviceFwNatConfigTest() throws ApiException {
-        UUID deviceId = null;
+        String deviceId = null;
         DeviceFwNatInfoDto deviceFwNatInfoDto = null;
         FwNatResponseDto response = api.createDeviceFwNatConfig(deviceId, deviceFwNatInfoDto);
 
@@ -65,7 +65,7 @@ public class FwNatNetcfgNorthboundApiTest {
      */
     @Test
     public void deleteDeviceFwNatConfigTest() throws ApiException {
-        UUID deviceId = null;
+        String deviceId = null;
         FwNatDeleteDto id = null;
         FwNatDeleteResponseDto response = api.deleteDeviceFwNatConfig(deviceId, id);
 
@@ -82,7 +82,7 @@ public class FwNatNetcfgNorthboundApiTest {
      */
     @Test
     public void getDeviceFwNatConfigTest() throws ApiException {
-        UUID deviceId = null;
+        String deviceId = null;
         Integer pageIndex = null;
         Integer pageSize = null;
         GetFwNatResponseDto response = api.getDeviceFwNatConfig(deviceId, pageIndex, pageSize);
@@ -100,7 +100,7 @@ public class FwNatNetcfgNorthboundApiTest {
      */
     @Test
     public void updateDeviceFwNatConfigTest() throws ApiException {
-        UUID deviceId = null;
+        String deviceId = null;
         DeviceFwNatInfoDto deviceFwNatInfoDto = null;
         FwNatResponseDto response = api.updateDeviceFwNatConfig(deviceId, deviceFwNatInfoDto);
 

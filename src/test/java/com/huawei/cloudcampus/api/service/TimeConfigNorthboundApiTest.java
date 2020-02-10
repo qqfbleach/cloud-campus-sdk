@@ -44,7 +44,7 @@ public class TimeConfigNorthboundApiTest {
      */
     @Test
     public void configTest() throws ApiException {
-        UUID siteId = null;
+        String siteId = null;
         TimeConfigDto body = null;
         TimeConfigRespDto response = api.config(siteId, body);
 
@@ -61,7 +61,7 @@ public class TimeConfigNorthboundApiTest {
      */
     @Test
     public void getConfigTest() throws ApiException {
-        UUID siteId = null;
+        String siteId = null;
         TimeConfigRespDto response = api.getConfig(siteId);
 
         // TODO: test validations

@@ -50,7 +50,7 @@ public class NetWorkServiceLocalUserApiTest {
      */
     @Test
     public void createLocaluserInfoTest() throws ApiException {
-        UUID siteId = null;
+        String siteId = null;
         CreateLocalUserInfoRequst body = null;
         CreateLocalUserInfoResponse response = api.createLocaluserInfo(siteId, body);
 
@@ -67,7 +67,7 @@ public class NetWorkServiceLocalUserApiTest {
      */
     @Test
     public void createTemplateLocaluserInfoTest() throws ApiException {
-        UUID siteTemplateId = null;
+        String siteTemplateId = null;
         CreateLocalUserInfoRequst body = null;
         CreateLocalUserInfoResponse response = api.createTemplateLocaluserInfo(siteTemplateId, body);
 
@@ -84,7 +84,7 @@ public class NetWorkServiceLocalUserApiTest {
      */
     @Test
     public void deleteLocaluserInfoTest() throws ApiException {
-        UUID siteId = null;
+        String siteId = null;
         String username = null;
         DeleteLocalUserInfoResponse response = api.deleteLocaluserInfo(siteId, username);
 
@@ -101,7 +101,7 @@ public class NetWorkServiceLocalUserApiTest {
      */
     @Test
     public void deleteTemplateLocaluserInfoTest() throws ApiException {
-        UUID siteTemplateId = null;
+        String siteTemplateId = null;
         String username = null;
         DeleteLocalUserInfoResponse response = api.deleteTemplateLocaluserInfo(siteTemplateId, username);
 
@@ -118,7 +118,7 @@ public class NetWorkServiceLocalUserApiTest {
      */
     @Test
     public void getLocaluserInfoTest() throws ApiException {
-        UUID siteId = null;
+        String siteId = null;
         GetLocalUserInfosResponse response = api.getLocaluserInfo(siteId);
 
         // TODO: test validations
@@ -134,7 +134,7 @@ public class NetWorkServiceLocalUserApiTest {
      */
     @Test
     public void getTemplateLocaluserInfoTest() throws ApiException {
-        UUID siteTemplateId = null;
+        String siteTemplateId = null;
         GetLocalUserInfosResponse response = api.getTemplateLocaluserInfo(siteTemplateId);
 
         // TODO: test validations
@@ -166,7 +166,7 @@ public class NetWorkServiceLocalUserApiTest {
      */
     @Test
     public void updateLocaluserInfoTest() throws ApiException {
-        UUID siteId = null;
+        String siteId = null;
         String username = null;
         UpdateLocalUserInfoRequst body = null;
         UpdateLocalUserInfoResponse response = api.updateLocaluserInfo(siteId, username, body);
@@ -184,7 +184,7 @@ public class NetWorkServiceLocalUserApiTest {
      */
     @Test
     public void updateTemplateLocaluserInfoTest() throws ApiException {
-        UUID siteTemplateId = null;
+        String siteTemplateId = null;
         String username = null;
         UpdateLocalUserInfoRequst body = null;
         UpdateLocalUserInfoResponse response = api.updateTemplateLocaluserInfo(siteTemplateId, username, body);

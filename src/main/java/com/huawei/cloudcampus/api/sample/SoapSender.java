@@ -29,8 +29,8 @@ public class SoapSender {
 		}
 		
 		String s = sendMessage(jsonMessage, targetUrl, httpMethodEnum, token);
-//		System.out.println("[SoapSender] response body: " + s);
-		System.out.println( s.split("\"token_id\":\"")[1].replace("}", "").replace("\"", ""));
+		System.out.println("[SoapSender] response body: " + s);
+		// System.out.println( s.split("\"token_id\":\"")[1].replace("}", "").replace("\"", ""));
 
 		return s;
 	}

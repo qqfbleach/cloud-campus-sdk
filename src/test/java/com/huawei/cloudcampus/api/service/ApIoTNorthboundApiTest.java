@@ -14,6 +14,7 @@
 package com.huawei.cloudcampus.api.service;
 
 import com.huawei.cloudcampus.api.ApiException;
+import com.huawei.cloudcampus.api.model.IoTConfigResponseDto;
 import com.huawei.cloudcampus.api.model.IoTDto;
 import com.huawei.cloudcampus.api.model.IoTResponseDto;
 import java.util.UUID;
@@ -46,7 +47,7 @@ public class ApIoTNorthboundApiTest {
     public void configTest() throws ApiException {
         UUID siteId = null;
         IoTDto body = null;
-        IoTResponseDto response = api.config(siteId, body);
+        IoTConfigResponseDto response = api.config(siteId, body);
 
         // TODO: test validations
     }

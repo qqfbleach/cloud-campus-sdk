@@ -48,7 +48,7 @@ public class LSWGlobalVlanNorthboundApiTest {
      */
     @Test
     public void createLswGlobalVlanInfoTest() throws ApiException {
-        UUID deviceId = null;
+        String deviceId = null;
         LswGlobalVlanDto body = null;
         LswGlobalVlanResponseDto response = api.createLswGlobalVlanInfo(deviceId, body);
 
@@ -82,7 +82,7 @@ public class LSWGlobalVlanNorthboundApiTest {
      */
     @Test
     public void getLswGlobalVlanInfosTest() throws ApiException {
-        UUID deviceId = null;
+        String deviceId = null;
         LswGlobalVlanAllRespDto response = api.getLswGlobalVlanInfos(deviceId);
 
         // TODO: test validations
@@ -98,7 +98,7 @@ public class LSWGlobalVlanNorthboundApiTest {
      */
     @Test
     public void updateLswGlobalVlanInfoTest() throws ApiException {
-        UUID deviceId = null;
+        String deviceId = null;
         LswGlobalVlanUpdateDto body = null;
         LswGlobalVlanResponseDto response = api.updateLswGlobalVlanInfo(deviceId, body);
 

@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * API tests for SitesNorthBoundApi
@@ -42,7 +43,7 @@ public class SitesNorthBoundApiTest {
      */
     @Test
     public void getBuildingsInfoTest() throws ApiException {
-        String siteId = null;
+        UUID siteId = null;
         QueryBuildingsResponse response = api.getBuildingsInfo(siteId);
 
         // TODO: test validations

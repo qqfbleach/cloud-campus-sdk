@@ -21,6 +21,8 @@ import com.huawei.cloudcampus.api.model.CreateDeviceBean;
 import com.huawei.cloudcampus.api.model.CreateDeviceDto;
 import com.huawei.cloudcampus.api.model.DeleteDeviceBean;
 import com.huawei.cloudcampus.api.model.DeleteDeviceDto;
+import com.huawei.cloudcampus.api.model.DeviceModelEntityList;
+import com.huawei.cloudcampus.api.model.DeviceResponseBean;
 import com.huawei.cloudcampus.api.model.GetDeviceModelEntityList;
 import com.huawei.cloudcampus.api.model.GetDeviceResponseBean;
 import com.huawei.cloudcampus.api.model.ModifyDeviceBean;
@@ -102,7 +104,7 @@ public class DeviceNorthboundApiTest {
      */
     @Test
     public void getDeviceModelsTest() throws ApiException {
-        GetDeviceModelEntityList response = api.getDeviceModels();
+        DeviceModelEntityList response = api.getDeviceModels();
 
         // TODO: test validations
     }
@@ -124,7 +126,7 @@ public class DeviceNorthboundApiTest {
         String siteId = null;
         String sort = null;
         String name = null;
-        GetDeviceResponseBean response = api.getSiteDevice(pageIndex, pageSize, neType, deviceType, siteId, sort, name);
+        DeviceResponseBean response = api.getSiteDevice(pageIndex, pageSize, neType, deviceType, siteId, sort, name);
 
         // TODO: test validations
     }

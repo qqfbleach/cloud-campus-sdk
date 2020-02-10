@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * API tests for FloorsNorthBoundApi
@@ -44,7 +45,7 @@ public class FloorsNorthBoundApiTest {
      */
     @Test
     public void getDeviceDetailsByFloorIdTest() throws ApiException {
-        String floorId = null;
+        UUID floorId = null;
         String deviceType = null;
         QueryLocatedDeviceDetailsResponse response = api.getDeviceDetailsByFloorId(floorId, deviceType);
 
@@ -61,7 +62,7 @@ public class FloorsNorthBoundApiTest {
      */
     @Test
     public void getFloorDetailsTest() throws ApiException {
-        String floorId = null;
+        UUID floorId = null;
         QueryFloorDetailsResponse response = api.getFloorDetails(floorId);
 
         // TODO: test validations
@@ -77,7 +78,7 @@ public class FloorsNorthBoundApiTest {
      */
     @Test
     public void getFloorLocationDetailsTest() throws ApiException {
-        String floorId = null;
+        UUID floorId = null;
         QueryFloorLocationDetailsResponse response = api.getFloorLocationDetails(floorId);
 
         // TODO: test validations

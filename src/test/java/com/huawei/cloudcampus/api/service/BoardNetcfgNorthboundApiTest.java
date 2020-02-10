@@ -16,6 +16,7 @@ package com.huawei.cloudcampus.api.service;
 import com.huawei.cloudcampus.api.ApiException;
 import com.huawei.cloudcampus.api.model.BoardConfigDto;
 import com.huawei.cloudcampus.api.model.BoardDeleteDto;
+import com.huawei.cloudcampus.api.model.BoardDeleteResponseDto;
 import com.huawei.cloudcampus.api.model.ConfigResponseDto;
 import com.huawei.cloudcampus.api.model.DeleteResponseDto;
 import com.huawei.cloudcampus.api.model.FailedOperationDto;
@@ -67,7 +68,7 @@ public class BoardNetcfgNorthboundApiTest {
     public void deleteDeviceBoardConfigTest() throws ApiException {
         UUID deviceId = null;
         BoardDeleteDto slot = null;
-        DeleteResponseDto response = api.deleteDeviceBoardConfig(deviceId, slot);
+        BoardDeleteResponseDto response = api.deleteDeviceBoardConfig(deviceId, slot);
 
         // TODO: test validations
     }

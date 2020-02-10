@@ -45,7 +45,7 @@ public class NetWorkServiceTacacsApiTest {
      */
     @Test
     public void getTacacsConfigTest() throws ApiException {
-        UUID siteId = null;
+        String siteId = null;
         GetTacacsConfigResponse response = api.getTacacsConfig(siteId);
 
         // TODO: test validations
@@ -61,7 +61,7 @@ public class NetWorkServiceTacacsApiTest {
      */
     @Test
     public void updateTacacsConfigTest() throws ApiException {
-        UUID siteId = null;
+        String siteId = null;
         TacacsServerInfo body = null;
         EditTacacsConfigResponse response = api.updateTacacsConfig(siteId, body);
 
